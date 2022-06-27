@@ -1,0 +1,9 @@
+hi {{ user }},
+Thank you for using our services
+
+please, click below link for sign up.
+
+{{ activate_url }}
+
+Have a nice day!
+
