@@ -8,8 +8,9 @@ from config import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('board/create', board.views.create),
     path('', board.views.list),
+    path('board/create', board.views.create),
+    path('board/list', board.views.list),
     path('board/read/<int:bid>', board.views.read),
     path('board/delete/<int:bid>', board.views.delete),
     path('board/update/<int:bid>', board.views.update),
@@ -23,3 +24,4 @@ urlpatterns = [
     path('accounts/profile', accounts.views.profile),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
